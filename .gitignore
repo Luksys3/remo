@@ -1,0 +1,22 @@
+# Local credentials and overrides
+.env
+.env.*
+!.env.example
+
+# Application databases, cookies, thumbnails, and downloaded media
+/data/**
+!/data/youtarr/
+!/data/youtarr/config/
+!/data/youtarr/jobs/
+!/data/youtarr/images/
+!/data/navidrome/
+!/data/youtarr/config/.gitkeep
+!/data/youtarr/jobs/.gitkeep
+!/data/youtarr/images/.gitkeep
+!/data/navidrome/.gitkeep
+/media/**
+!/media/youtube/
+!/media/youtube/.gitkeep
+/backups/
+
+.DS_Store

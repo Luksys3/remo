@@ -1,0 +1,11 @@
+:80 {
+	redir /navidrome /navidrome/ 308
+
+	handle /navidrome/* {
+		reverse_proxy navidrome:4533
+	}
+
+	handle {
+		reverse_proxy youtarr:3011
+	}
+}
