@@ -12,7 +12,6 @@ YouTube playlists → Youtarr → local MP3s → Navidrome → Amperfy over Wire
 
 3. Open **Navidrome** at `http://<VM-IP>/navidrome/` and create an admin account before downloading music.
 4. Open **Youtarr** at `http://<VM-IP>/` using the admin credentials from `.env`:
-    - Set Default Subfolder to `music` in Youtarr settings.
     - For individual song artwork, set custom yt-dlp arguments to `--embed-thumbnail`. Navidrome will show embedded artwork per song.
     - Add a YouTube playlist, set its **Download Type** to **MP3 Only**, select existing videos to download and enable `Auto-download new videos`.
 5. In **Amperfy**, add a **Subsonic** server at `http://<VM-IP>/navidrome` with a Navidrome account. Connect WireGuard when away; its routes must reach the VM.
